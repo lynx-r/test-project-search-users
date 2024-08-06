@@ -1,0 +1,3 @@
+.v-frame {
+  @apply shadow-lg rounded-lg ring-1 ring-gray-100;
+}

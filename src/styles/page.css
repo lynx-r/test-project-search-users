@@ -1,0 +1,7 @@
+v-page {
+  @apply flex flex-1 gap-lg;
+
+  @apply shadow-lg rounded-lg ring-1 ring-gray-100;
+
+  @apply bg-light-2;
+}

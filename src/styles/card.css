@@ -1,0 +1,15 @@
+v-card {
+  @apply flex flex-items-center;
+
+  @apply shadow-lg rounded-lg ring-1 ring-gray-100;
+
+  v-card-prepend {
+    @apply self-stretch;
+
+    @apply flex items-center;
+
+    @apply p-r-xl m-x-xl;
+
+    @apply b-r-solid b-r-1 b-gray-100;
+  }
+}

@@ -1,0 +1,5 @@
+v-sidebar {
+  @apply p-x-xl;
+
+  @apply b-r-solid b-r-1 b-gray-200;
+}

@@ -1,0 +1,5 @@
+v-empty-state {
+  @apply block;
+
+  @apply my-lg;
+}

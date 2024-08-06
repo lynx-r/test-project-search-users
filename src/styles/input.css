@@ -1,0 +1,5 @@
+v-input {
+  display: block;
+
+  @apply my-lg;
+}

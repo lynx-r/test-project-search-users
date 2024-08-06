@@ -1,0 +1,9 @@
+v-header {
+  @apply flex flex-justify-between flex-items-center;
+
+  @apply mb-lg;
+
+  v-logo {
+    @apply color-red-600 font-black text-size-3xl;
+  }
+}

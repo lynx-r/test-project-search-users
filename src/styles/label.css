@@ -1,0 +1,6 @@
+v-label {
+}
+
+v-label-text {
+  @apply color-gray-500;
+}
