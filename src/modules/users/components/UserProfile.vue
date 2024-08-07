@@ -1,17 +1,26 @@
-<script setup lang="ts">
-import AppEmptyState from "@/components/AppEmptyState.vue";
-import ProfileCard from "./ProfileCard.vue";
-</script>
-
 <template>
   <div class="user-profile">
-    <ProfileCard />
     <AppEmptyState
+      v-if="!selectedUser"
       class="self-center"
       title="Выберите сотрудника, чтобы посмотреть его профиль"
     />
+    <UserProfileCard
+      v-else
+      :user="selectedUser"
+    />
   </div>
 </template>
+
+<script setup lang="ts">
+import AppEmptyState from "@/components/AppEmptyState.vue";
+import { computed } from "vue";
+import usePresenter from "../presenter/usePresenter";
+import UserProfileCard from "./UserProfileCard.vue";
+
+const presenter = usePresenter();
+const selectedUser = computed(() => presenter.state.selectedUser);
+</script>
 
 <style lang="css" scoped>
 .user-profile {

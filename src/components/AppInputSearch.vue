@@ -1,6 +1,9 @@
 <template>
   <v-input>
-    <input :placeholder="placeholder" />
+    <input
+      v-model="search"
+      :placeholder="placeholder"
+    />
   </v-input>
 </template>
 
@@ -8,4 +11,5 @@
 defineProps<{
   placeholder?: string;
 }>();
+const search = defineModel("search");
 </script>
