@@ -1,8 +1,8 @@
 import { createStore } from "vuex";
-import adminStore from "./modules/admin/store/vuex";
+import usersStore from "./modules/users/store/createVuexStore";
 
 const vuexStore = createStore({});
 
-vuexStore.registerModule("admin", adminStore);
+vuexStore.registerModule("users", usersStore);
 
 export default vuexStore;

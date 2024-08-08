@@ -10,9 +10,14 @@ import { ActiveLoader, useLoading } from "vue-loading-overlay";
 import SearchSidebar from "../components/SearchSidebar.vue";
 import UserProfile from "../components/UserProfile.vue";
 import { createPresenter } from "../presenter/usePresenter";
-import createRefStore from "../store/createRefStore";
+// import createRefStore from "../store/createRefStore";
+import { createVuexStore } from "../store/createVuexStore";
 
-const store = createRefStore();
+// const store = createRefStore();
+const store = createVuexStore();
+
+// a presenter can use any store implementation
+// based on the interface CommonStore
 const presenter = createPresenter(store);
 
 const $loading = useLoading();

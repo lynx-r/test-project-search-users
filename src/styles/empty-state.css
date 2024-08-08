@@ -1,5 +1,5 @@
 v-empty-state {
-  @apply block;
+  @apply flex items-center h-100%;
 
   @apply my-lg;
 }

@@ -7,6 +7,3 @@ export default interface State extends RequestState {
   usersCount: number | null;
   selectedUser: User | null;
 }
-
-export type VuexState = { value: State };
-export type VuexAdminState = { admin: { value: State } };
